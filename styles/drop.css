@@ -50,12 +50,12 @@ body .container .row .col {
 
 body .container .row .placeholder {
   width: 150px;
-  height: 33px;
+  height: 52px;
 }
 
 body .container .row .placeholder .item {
   width: 150px;
-  height: auto;
+  height: 52px;
   border: 1px solid #000000b7;
   -webkit-box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
           box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
