@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+    background: rgba(20, 34, 30, 0.849);
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        height: 80vh;
+        border-radius: 25px;
+        margin: 10px;
+        cursor: pointer;
+        flex: 1;
+        position: relative;
+        transition: all 500ms ease-in-out;
+
+        .card__title {
+            position: absolute;
+            bottom: 5px;
+            left: 10px;
+            font-size: 28px;
+            margin: 0;
+            opacity: 0;
+        }
+
+    }
+
+    .active {
+        flex: 6;
+
+        .card__title {
+            opacity: 1;
+            transition: opacity 0.3s ease-in;
+        }
+    }
+
+    .card1 {
+        background: url(../pictures/bn.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card2 {
+        background: url(../pictures/st.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card3 {
+        background: url(../pictures/pineapple.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card4 {
+        background: url(../pictures/chr.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .card5 {
+        background: url(../pictures/or.jpg);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
