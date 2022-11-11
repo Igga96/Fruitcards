@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #3a3a3a;
+  font-size: 20px;
+  overflow: hidden;
+  width: 100vh;
+  margin: 0 auto;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10vh;
+}
+
+body .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+body .container .row .col {
+  width: 150px;
+  -webkit-box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+          box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #585858;
+  text-align: center;
+}
+
+body .container .row .placeholder {
+  width: 150px;
+  height: 33px;
+}
+
+body .container .row .placeholder .item {
+  width: 150px;
+  height: auto;
+  border: 1px solid #000000b7;
+  -webkit-box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+          box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  background: #72cab7;
+  color: #585858;
+  text-align: center;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+body .container .row .placeholder .item:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.start {
+  background: -webkit-gradient(linear, left top, right top, from(#fa4c4c), color-stop(179.25%, #fdfdfd));
+  background: linear-gradient(90deg, #fa4c4c 0%, #fdfdfd 179.25%);
+}
+
+.progress {
+  background: -webkit-gradient(linear, left top, right top, from(#d0c8be), to(#ffbf48));
+  background: linear-gradient(90deg, #d0c8be 0%, #ffbf48 100%);
+}
+
+.done {
+  background: -webkit-gradient(linear, left top, right top, from(#7ef339), color-stop(179.25%, #fdfdfd));
+  background: linear-gradient(90deg, #7ef339 0%, #fdfdfd 179.25%);
+}
+
+.hold {
+  border: 5px solid #ffde4d;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border-top: 2px solid #ff943d;
+}
