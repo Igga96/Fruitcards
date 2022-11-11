@@ -79,8 +79,8 @@ body .container .row .placeholder .item:active {
 }
 
 .progress {
-  background: -webkit-gradient(linear, left top, right top, from(#d0c8be), to(#ffbf48));
-  background: linear-gradient(90deg, #d0c8be 0%, #ffbf48 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#fd971c), color-stop(179.25%, #fdfdfd));
+  background: linear-gradient(90deg, #fd971c 0%, #fdfdfd 179.25%);
 }
 
 .done {
