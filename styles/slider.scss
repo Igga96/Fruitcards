@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+
+
+        .sidebar {
+            height: 100%;
+            width: 35%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 0.5s ease-in-out;
+
+            div {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+            }
+
+            .item__title {
+                font-size: 40px;
+                margin-bottom: 10px;
+                margin-top: -30px;
+            }
+        }
+
+        .slides {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 35%;
+            width: 65%;
+            transition: transform 0.5s ease-in-out;
+
+            .slide {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .controls {
+            button {
+                position: absolute;
+                left: 35%;
+                top: 50%;
+                z-index: 100;
+                background-color: #fff;
+                border: none;
+                color: #aaa;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 15px;
+
+
+
+                &:hover {
+                    color: #222;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .button__up {
+                transform: translateY(-100%);
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            .button__down {
+                transform: translateX(-100%);
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+    }
+}
+
+
+.slide__item1 {
+    background-image: url(../pictures/1.jpg);
+}
+
+.slide__item2 {
+    background-image: url(../pictures/2.jpg);
+
+}
+
+.slide__item3 {
+    background-image: url(../pictures/3.jpg);
+
+}
+
+.slide__item4 {
+    background-image: url(../pictures/4.jpg);
+}
+
+
+.sidebar__item1 {
+    background: linear-gradient(229.99deg, #000000c5 -26%, #018b5146 145%);
+}
+
+.sidebar__item2 {
+    background: linear-gradient(215.32deg, #eba67e6e -1%, #a06204d3 124%);
+}
+
+.sidebar__item3 {
+    background: linear-gradient(221.87deg, #cef3abc0 1%, #1f290cc2 128%);
+}
+
+.sidebar__item4 {
+    background: linear-gradient(220.16deg, #494310c0 -8%, #fcd5579d 138%);
+}
